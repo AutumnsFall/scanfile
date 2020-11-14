@@ -1,0 +1,30 @@
+<html>
+<head>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+
+    let fileList = [];
+
+    $.ajax({
+        url: "http://localhost:3000/data",
+        dataType: 'json'
+    })
+    .done(data =>{
+        fileList = data;
+        console.log(files);
+    });
+
+    
+
+
+
+</script>
+    Hello
+
+</body>
+
+</html>
